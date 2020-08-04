@@ -1,0 +1,13 @@
+<header class="sans-serif w-100">
+  <div class="cover bg-left bg-center-l" style="background-image: url(http://mrmrs.github.io/photos/u/011.jpg)">
+    <div class="bg-black-80 pb5 pb6-m pb7-l">
+      <nav class="dt w-100 mw8 center"> 
+      </nav> 
+      <div class="tc-l mt5 mt6-m mt7-l ph3">
+        <h2 class="fw1 f3 white-80 mt3 mb41]
+      =]=">Hey, I'm</h2>
+        <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Carter Pedersen</h1>
+      </div>
+    </div>
+  </div> 
+</header>
