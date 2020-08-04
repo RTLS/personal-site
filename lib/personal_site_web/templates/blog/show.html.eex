@@ -1,0 +1,17 @@
+<article class="athelas">
+  <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(<%= @article.image_url %>) no-repeat center">
+    <div class="dtc v-mid">
+      <h1 class="f1 f-headline-l fw1 i white-60"><%= @article.title %></h1>
+      <blockquote class="ph0 mh0 measure f4 lh-copy center">
+        <cite class="f6 ttu tracked fs-normal">Carter Pedersen </cite>
+      </blockquote>
+    </div>
+  </div>
+  <div class="center measure-wide f5 pv5 lh-copy ph2">
+    <p><%= @article.body %></p>
+    <p><%= @article.body %></p>
+    <p><%= @article.body %></p>
+    <p><%= @article.body %></p>
+    <p><%= @article.body %></p>
+  </div>
+</article>
