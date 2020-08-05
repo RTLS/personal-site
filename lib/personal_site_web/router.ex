@@ -16,7 +16,7 @@ defmodule PersonalSiteWeb.Router do
   scope "/", PersonalSiteWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", HomeController, :index
     get "blog", BlogController, :index
     get "blog/:slug", BlogController, :show
   end
