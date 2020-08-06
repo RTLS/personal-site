@@ -19,7 +19,7 @@
           <img src=<%= job.image_url %> class="db br4 w-60-ns center">
         </div>
         <div class="fl w-100 w-two-thirds-ns pa2">
-          <a class="link f3 fw4 lh-copy avenir mt0 blue" href=<%= job.link %>><%= job.company %></a>
+          <a class="link f3 fw4 lh-copy avenir mt0 blue" target="_blank" href=<%= job.link %>><%= job.company %></a>
           <h1 class="f6 fw6 avenir mt0 lh-copy mv0 black-80"><%= "#{job.position}, #{job_date_descriptor(job)}" %></h1>
           <h1 class="f6 fw6 avenir mt0 lh-copy black-80"><%= job.location %></h1>
           <%= for paragraph <- String.split(job.blurb, "\n") do %>
@@ -37,7 +37,7 @@
 </div>
 <article class="mt0 mb3">
   <%= for book <- @books do %>
-    <a href=<%= book.link %> class="fl w-50 w-25-l link overflow-hidden">
+    <a target="_blank" href=<%= book.link %> class="fl w-50 w-25-l link overflow-hidden">
       <div role="img" class="grow aspect-ratio--4x6" aria-label=<%= book.title %> style="background: url(<%= book.image_url %>) no-repeat center center; background-size: cover;"></div>
     </a>
   <% end %>
