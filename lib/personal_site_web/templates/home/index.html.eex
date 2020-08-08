@@ -1,7 +1,7 @@
 <section class="cover vh-100 bg-right bg-center-l sans-serif avenir w-100"
   style="background-image:
     linear-gradient(to bottom, rgba(37, 57, 109, 0.8), rgba(36, 148, 80, 0.8)),
-    url(/images/home_header.JPG)"
+    url(<%= Routes.static_path(@conn, "/images/home_header.JPG") %>)"
   >
   <div class="vh-75 pt5-ns mw9 center ph3-ns">
     <div class="fl w-100 w-20-l w-40-m pl3 pl5-l pt3">
