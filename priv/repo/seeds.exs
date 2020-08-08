@@ -54,11 +54,10 @@ jobs = [
     start_date: ~D[2018-10-29],
     location: "Los Angeles, CA",
     link: "https://blitz.gg",
-    image_url: "https://miro.medium.com/fit/c/336/336/1*61FRSoyKKZm1lUfBSDkCZw.png",
+    logo_url: "/images/blitz_logo.svg",
+    image_url: "/images/blitz_background.jpg",
     blurb: """
-    As Software Engineering Manager at Blitz, I help the backend team move fast and serve data analytics at scale.
-
-    In my time here availability of our backend system has increased from ~80% to 99.8% as DAUs have quadrupled from 250k to 1M.
+    As Software Engineering Manager at Blitz, I help the backend team move fast and serve data analytics at scale. In my time here availability of our backend system has increased from ~80% to 99.8% as DAUs have quadrupled from 250k to 1M.
 
     I have also led features such as: an automated statistical analysis of champions to create a continually fresh tier list; a high throughput scraper that ingests 10 million unique daily matches to our database; per-user statistical breakdown of match history to provide personalized insights and coaching.
     """
@@ -70,10 +69,9 @@ jobs = [
     end_date: ~D[2018-11-01],
     location: "Los Angeles, CA",
     link: nil,
-    image_url: "/images/bloom_icon.jpg",
+    logo_url: "/images/bloom_logo.png",
+    image_url: "/images/bloom_background.jpg",
     blurb: """
-    Understand your lifestyle. Guide your growth.
-
     The goal of Bloom is to better our users with every use. Bloom employs geo-spatial visualizations, statistical analysis and predictive algorithms to help users understand their lifestyle and choose fulfilling activities.
 
     As technical co-founder of Bloom I have full stack responsibilities from mobile UX implementation to cloud services deployment.
@@ -88,15 +86,14 @@ jobs = [
     end_date: ~D[2018-09-01],
     location: "Los Angeles, CA",
     link: "https://elfin.igpp.ucla.edu/",
-    image_url: "https://images.squarespace-cdn.com/content/v1/5b3bd5a9266c077a5bdfcafd/1535699276943-VYT7OBU7KS5S4YOICCXD/ke17ZwdGBToddI8pDm48kNVzTC7JclgQLQG-B3yAPEl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k6sq9GEl9ZUDkp1sRKcAyIiqjWyL1axSWYhaCN0J7BEhfMDnMJ6WZQoa7VNlhtUng/ELFIN-space-poster-nologos.jpg?format=2500w",
+    logo_url: "/images/elfin_logo.png",
+    image_url: "/images/elfin_background.jpg",
     blurb: """
     The Electron Losses and Fields Investigation (ELFIN) is a 3U+ CubeSat mission under development by UCLA with funding from JPL and NSF.
 
     As Software Lead, I was responsible for managing a team of 10 to design, build, and verify both flight software and ground support software for ELFIN.
 
     Our embedded flight software (C) ran primarily on PIC18s and PIC24s and was responsible for main channel data handling, housekeeping data collection, satellite orientation, and other mission critical tasks. Our ground support software (Python) ran through a graphical PyQT linux application for command handling and remote daemon for controlling our 6 meter earth station antenna.
-
-    Prior to leading the embedded and ground software teams, I worked on Attitude Determination and Control (ADC) to derive and simulate algorithms designed to orient the satellite in space. Original research in this topic is presented below.
     """
   }
 ]

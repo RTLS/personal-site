@@ -2,7 +2,7 @@ defmodule PersonalSiteWeb.HomeView do
   use PersonalSiteWeb, :view
 
   def job_date_descriptor(%{end_date: nil, start_date: start_date}) do
-    "since #{format_date(start_date)}"
+    "#{format_date(start_date)} - Present"
   end
 
   def job_date_descriptor(%{end_date: end_date, start_date: start_date}) do

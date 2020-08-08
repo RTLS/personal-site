@@ -6,6 +6,7 @@ defmodule PersonalSite.Jobs.Job do
     field :blurb, :string
     field :company, :string
     field :end_date, :date
+    field :logo_url, :string
     field :image_url, :string
     field :link, :string
     field :location, :string
@@ -20,6 +21,7 @@ defmodule PersonalSite.Jobs.Job do
     :position,
     :start_date,
     :blurb,
+    :logo_url,
     :image_url,
     :location,
     :link
