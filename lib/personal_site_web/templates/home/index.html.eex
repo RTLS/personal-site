@@ -6,18 +6,19 @@
   <div class="vh-75 pt5-ns mw9 center ph3-ns">
     <div class="fl w-100 w-20-l w-40-m pl3 pl5-l pt3">
       <h1 class="f2 f3-ns fw3-ns fw5 lh-copy white-90 tracked-mega ttu">Carter Pedersen</h1>
-      <ol class="list pl0 lh-copy tracked-mega">
+      <ol class="list pl0 dn db-l lh-copy tracked-mega">
         <a class="white-90 no-underline underline-hover" href="/#projects"><li class="pt3">Projects</li></a>
+        <a class="white-90 no-underline underline-hover" href="/#bookshelf"><li class="pt2">Books</li></a>
         <a class="white-90 no-underline underline-hover" href="https://drive.google.com/uc?export=download&id=1a9I9Hor4KawcEus9s5WEIqG8czeZXSyU" target="_blank"><li class="pt2">Resume</li></a>
         <a class="white-90 no-underline underline-hover" href="/#contact"><li class="pt2">Contact</li></a>
       </ol>
     </div>
     <div class="fl w-100 w-70-l ph3">
       <div>
-        <h1 class="f-subheadline-l f2 mt0-ns lh-copy white-90">Backend engineer specializing in scalable systems.</h1>
-        <h1 class="mt0 f2-l f3 fw3 lh-copy white-90">Interested in working together? Let's chat.</h1>
+        <h1 class="f-subheadline-l pb6 pb0-l f2 mt0-ns lh-copy white-90">Backend engineer specializing in scalable systems.</h1>
+        <h1 class="mt0 f2-l f3 fw3 pt6 pt0-l lh-copy white-90">Interested in working together? Let's chat.</h1>
         <div class="pt0">
-          <a class="link white-90 hover-white inline-flex items-center ma2 pr2" target="_blank" href="https://github.com/rtls" title="GitHub">
+          <a class="link white-90 hover-white inline-flex items-center ma2-ns pr2" target="_blank" href="https://github.com/rtls" title="GitHub">
             <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
             <span class="f6 ml3 pr2">GitHub</span>
           </a>
@@ -55,15 +56,15 @@
     </section>
   <% end %>
 </section>
-<div class="w100 bg-black-10 pv4">
-  <section class="mw7 center avenir">
-    <h2 class="tc avenir f2 lh-copy black-80 ph3 ph0-l mv0">What's on my bookshelf</h2>
-  </section>
-</div>
-<article class="mt0 mb3">
+<section class="mt0 mb3" id="bookshelf">
+  <div class="w100 bg-black-10 pv4">
+    <section class="mw7 center avenir">
+      <h2 class="tc avenir f2 lh-copy black-80 ph3 ph0-l mv0">What's on my bookshelf</h2>
+    </section>
+  </div>
   <%= for book <- @books do %>
     <a target="_blank" href=<%= book.link %> class="fl w-50 w-25-l link overflow-hidden">
       <div role="img" class="grow aspect-ratio--4x6" loading="lazy" aria-label=<%= book.title %> style="background: url(<%= book.image_url %>) no-repeat center center; background-size: cover;"></div>
     </a>
   <% end %>
-</article>
+</section>
