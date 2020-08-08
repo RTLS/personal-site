@@ -1,10 +1,10 @@
-<section class="cover vh-100 bg-right bg-center-l sans-serif avenir w-100"
+<section class="cover vh-100 bg-right bg-center-l sans-serif avenir w-100 ph3 pv3 pv6-ns"
   style="background-image:
     linear-gradient(to bottom, rgba(37, 57, 109, 0.8), rgba(36, 148, 80, 0.8)),
     url(<%= Routes.static_path(@conn, "/images/home_header.JPG") %>)"
   >
-  <div class="vh-75 pt5-ns mw9 center ph3-ns">
-    <div class="fl w-100 w-20-l w-40-m pl3 pl5-l pt3">
+  <div class="mw9 center ph3-ns">
+    <div class="fl w-100 w-20-l w-40-m pl5-l">
       <h1 class="f2 f3-ns fw3-ns fw5 lh-copy white-90 tracked-mega ttu">Carter Pedersen</h1>
       <ol class="list pl0 dn db-l lh-copy tracked-mega">
         <a class="white-90 no-underline underline-hover" href="/#projects"><li class="pt3">Projects</li></a>
@@ -13,7 +13,7 @@
         <a class="white-90 no-underline underline-hover" href="/#contact"><li class="pt2">Contact</li></a>
       </ol>
     </div>
-    <div class="fl w-100 w-70-l ph3">
+    <div class="fl w-100 w-70-l">
       <div>
         <h1 class="f-subheadline-l pb6 pb0-l f2 mt0-ns lh-copy white-90">Backend engineer specializing in scalable systems.</h1>
         <h1 class="mt0 f2-l f3 fw3 pt6 pt0-l lh-copy white-90">Interested in working together? Let's chat.</h1>
@@ -36,11 +36,11 @@
   </div>
 </section>
 <section class="w-100 center avenir bg-black-80 pb4" id="projects">
-  <h2 class="tc avenir f2 lh-copy white-80 ph3 ph0-l pt5 pb3 mt0">Some work I've done</h2>
+  <h2 class="tc avenir f2 lh-copy white-90 ph3 ph0-l pt5 pb3 mt0">Some work I've done</h2>
   <%= for job <- @jobs do %>
     <section class="center cover flex-row bg-center sans-serif avenir w-90 br4 mv4 pv4 ph4 ph5-ns"
       style="background-image:
-        linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.2)),
+        linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.2)),
         url(<%= Routes.static_path(@conn, job.image_url) %>)"
       >
       <div class="w-80 w-50-m w-30-l">
@@ -50,7 +50,7 @@
         <h1 class="f3 fw6 avenir mt0 lh-copy mv0 white"><%= "#{job.position}" %></h1>
         <h1 class="f4 fw6 avenir mt0 lh-copy white"><%= job_date_descriptor(job) %></h1>
         <%= for paragraph <- String.split(job.blurb, "\n") do %>
-          <p class="f6 f6-l lh-copy white"><%= paragraph %></p>
+          <p class="f5 lh-copy white"><%= paragraph %></p>
         <% end %>
       </div>
     </section>
