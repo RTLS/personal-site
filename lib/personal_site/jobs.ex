@@ -22,6 +22,21 @@ defmodule PersonalSite.Jobs do
   end
 
   @doc """
+  Returns the list of jobs sorted by date.
+
+  ## Examples
+
+      iex> list_jobs_by_start_date()
+      [%Job{}, ...]
+
+  """
+  def list_jobs_by_start_date(order \\ :asc) do
+    Job
+    |> Job.by_start_date(order)
+    |> Repo.all()
+  end
+
+  @doc """
   Gets a single job.
 
   Raises `Ecto.NoResultsError` if the Job does not exist.

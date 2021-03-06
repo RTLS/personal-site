@@ -19,6 +19,7 @@ defmodule PersonalSiteWeb.Router do
     get "/", HomeController, :index
     get "blog", BlogController, :index
     get "blog/:slug", BlogController, :show
+    get "resume", ResumeController, :show
   end
 
   # Other scopes may use custom stacks.

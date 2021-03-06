@@ -9,7 +9,7 @@
       <ol class="list pl0 dn db-l lh-copy tracked-mega">
         <a class="white-90 no-underline underline-hover" href="/#projects"><li class="pt3">Projects</li></a>
         <a class="white-90 no-underline underline-hover" href="/#bookshelf"><li class="pt2">Books</li></a>
-        <a class="white-90 no-underline underline-hover" href="https://drive.google.com/uc?export=download&id=1a9I9Hor4KawcEus9s5WEIqG8czeZXSyU" target="_blank"><li class="pt2">Resume</li></a>
+        <a class="white-90 no-underline underline-hover" href="/resume"><li class="pt2">Resume</li></a>
         <a class="white-90 no-underline underline-hover" href="/#contact"><li class="pt2">Contact</li></a>
       </ol>
     </div>
