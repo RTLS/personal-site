@@ -9,14 +9,16 @@
       <ol class="list pl0 dn db-l lh-copy tracked-mega">
         <a class="white-90 no-underline underline-hover" href="/#projects"><li class="pt3">Projects</li></a>
         <a class="white-90 no-underline underline-hover" href="/#bookshelf"><li class="pt2">Books</li></a>
-        <a class="white-90 no-underline underline-hover" href="/resume"><li class="pt2">Resume</li></a>
+        <a class="white-90 no-underline underline-hover" target="_blank" href="/resume"><li class="pt2">Resume</li></a>
         <a class="white-90 no-underline underline-hover" href="/#contact"><li class="pt2">Contact</li></a>
       </ol>
     </div>
     <div class="fl w-100 w-70-l">
       <div>
         <h1 class="f-subheadline-l f2 mt0-ns lh-copy white-90">Backend engineer specializing in scalable systems.</h1>
-        <h1 class="mt0 f2-l f3 fw3 pt0-l lh-copy white-90">Interested in working together? Let's chat.</h1>
+        <h1 class="mt0 f2-l f3 fw3 pt0-l lh-copy white-90">Interested in working together?
+          <a class="white-90" target="_blank" href="https://calendly.com/carter-e-pedersen/20min">Let's chat</a>.
+        </h1>
         <%= render PersonalSiteWeb.ComponentsView, "social_icons.html" %>
       </div>
     </div>
